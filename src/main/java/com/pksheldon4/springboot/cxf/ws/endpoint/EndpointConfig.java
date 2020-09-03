@@ -18,7 +18,7 @@ public class EndpointConfig {
     @Bean
     public Endpoint endpoint() {
         EndpointImpl endpoint =
-                new EndpointImpl(bus, new HelloWorldImpl());
+            new EndpointImpl(bus, new HelloWorldImpl());
         endpoint.publish("/helloworld");
 
         return endpoint;
